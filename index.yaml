@@ -1,0 +1,29 @@
+name: util-storage-class-manager
+type: terraform
+description: Module to collect and organize storage classes within a template
+tags:
+  - storage class
+  - manager
+  - util
+versions:
+  - platforms: []
+    dependencies: []
+    variables:
+      - name: rwx_storage_class
+        type: string
+        description: The storage class to use for Read-Write-Many volumes
+      - name: file_storage_class
+        type: string
+        description: The storage class to use for File storage volumes
+      - name: block_storage_class
+        type: string
+        description: The storage class to use for Block storage volumes
+    version: v1.0.0
+    outputs:
+      - name: rwx_storage_class
+        description: The storage class to use for Read-Write-Many volumes
+      - name: file_storage_class
+        description: The storage class to use for File storage volumes
+      - name: block_storage_class
+        description: The storage class to use for Block storage volumess
+id: github.com/cloud-native-toolkit/terraform-util-storage-class-manager
