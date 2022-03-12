@@ -48,3 +48,9 @@ variable "vpc_cluster" {
   description = "Flag indicating that this is a vpc cluster"
   default     = false
 }
+
+variable "rwx_storage_class" { default = "rwx" }
+
+variable "file_storage_class" { default = "file" }
+
+variable "block_storage_class" { default = "block" }
