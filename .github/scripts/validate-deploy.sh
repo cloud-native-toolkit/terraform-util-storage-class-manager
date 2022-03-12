@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-EXPECTED_RWX_SC=$(cat variables.tf | grep "rwx_storage_class" | sed -E 's/.*default = "([^"])".*/\1/g')
-EXPECTED_FILE_SC=$(cat variables.tf | grep "file_storage_class" | sed -E 's/.*default = "([^"])".*/\1/g')
-EXPECTED_BLOCK_SC=$(cat variables.tf | grep "block_storage_class" | sed -E 's/.*default = "([^"])".*/\1/g')
+EXPECTED_RWX_SC=$(cat variables.tf | grep "rwx_storage_class" | sed -E 's/.*default = "([^"]*)".*/\1/g')
+EXPECTED_FILE_SC=$(cat variables.tf | grep "file_storage_class" | sed -E 's/.*default = "([^"]*)".*/\1/g')
+EXPECTED_BLOCK_SC=$(cat variables.tf | grep "block_storage_class" | sed -E 's/.*default = "([^"]*)".*/\1/g')
 
 ACTUAL_RWX_SC=$(cat .rwx_storage_class)
 ACTUAL_FILE_SC=$(cat .file_storage_class)
