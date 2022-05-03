@@ -51,6 +51,8 @@ variable "vpc_cluster" {
 
 variable "rwx_storage_class" { default = "rwx" }
 
+variable "rwo_storage_class" { default = "rwo" }
+
 variable "file_storage_class" { default = "file" }
 
 variable "block_storage_class" { default = "block" }
