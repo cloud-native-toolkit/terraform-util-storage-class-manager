@@ -12,6 +12,31 @@ versions:
       - name: rwx_storage_class
         type: string
         description: The storage class to use for Read-Write-Many volumes
+      - name: rwo_storage_class
+        type: string
+        description: The storage class to use for Read-Write-One volumes
+      - name: file_storage_class
+        type: string
+        description: The storage class to use for File storage volumes
+      - name: block_storage_class
+        type: string
+        description: The storage class to use for Block storage volumes
+    version: v1.0.1
+    outputs:
+      - name: rwx_storage_class
+        description: The storage class to use for Read-Write-Many volumes
+      - name: rwo_storage_class
+        description: The storage class to use for Read-Write-One volumes
+      - name: file_storage_class
+        description: The storage class to use for File storage volumes
+      - name: block_storage_class
+        description: The storage class to use for Block storage volumess
+  - platforms: []
+    dependencies: []
+    variables:
+      - name: rwx_storage_class
+        type: string
+        description: The storage class to use for Read-Write-Many volumes
       - name: file_storage_class
         type: string
         description: The storage class to use for File storage volumes
