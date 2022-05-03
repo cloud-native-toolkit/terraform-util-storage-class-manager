@@ -3,6 +3,11 @@ output "rwx_storage_class" {
   value       = var.rwx_storage_class
 }
 
+output "rwo_storage_class" {
+  description = "The storage class to use for Read-Write-One volumes"
+  value       = var.rwo_storage_class
+}
+
 output "file_storage_class" {
   description = "The storage class to use for File storage volumes"
   value       = var.file_storage_class

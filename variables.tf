@@ -3,6 +3,11 @@ variable "rwx_storage_class" {
   description = "The storage class to use for Read-Write-Many volumes"
 }
 
+variable "rwo_storage_class" {
+  type        = string
+  description = "The storage class to use for Read-Write-One volumes"
+}
+
 variable "file_storage_class" {
   type        = string
   description = "The storage class to use for File storage volumes"
