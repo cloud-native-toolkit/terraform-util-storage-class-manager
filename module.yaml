@@ -1,4 +1,6 @@
 name: util-storage-class-manager
+interfaces:
+  - github.com/cloud-native-toolkit/automation-modules#storage-consumer
 type: terraform
 description: Module to collect and organize storage classes within a template
 tags:
